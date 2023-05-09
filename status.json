@@ -1,5 +1,5 @@
 {
-	"status" : "on",
+	"status" : "off",
 	"patterns" : {
 		"SCCDY" : {
 			"count" : 5,
