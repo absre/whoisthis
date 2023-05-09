@@ -2,14 +2,17 @@
 	"status" : "on",
 	"patterns" : {
 		"SCCDY" : {
+			"pattern" : "SCCDY",
 			"count" : 5,
 			"type" : "ده هزار تومنی"
 		},
 		"SCCTF" : {
+			"pattern" : "SCCTF",
 			"count" : 5,
 			"type" : "چهار هزار تومنی"
 		},
 		"CW3A" : {
+			"pattern" : "CW3A",
 			"count" : 5,
 			"type" : "سه هزار تومنی"
 		}
