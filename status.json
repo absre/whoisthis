@@ -1,0 +1,13 @@
+{
+	"status" : "on",
+	"patterns" : {
+		"SCCDY" : {
+			"count" : 5,
+			"type" : "ده هزار تومنی"
+		},
+		"CCBY-BY" : {
+			"count" : 2,
+			"type" : "سه هزار تومنی"
+		}
+	}
+}
