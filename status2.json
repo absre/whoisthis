@@ -1,0 +1,20 @@
+{
+	"status" : "on",
+	"patterns" : [
+		{
+			"pattern" : "SCCDY",
+			"count" : 5,
+			"type" : "ده هزار تومنی"
+		},
+		{
+			"pattern" : "SCCTF",
+			"count" : 5,
+			"type" : "چهار هزار تومنی"
+		},
+		{
+			"pattern" : "CW3A",
+			"count" : 5,
+			"type" : "سه هزار تومنی"
+		}
+	]
+}
