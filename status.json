@@ -3,13 +3,8 @@
 	"patterns" : [
 		{
 			"pattern" : "YSCCD",
-			"count" : 5,
-			"type" : "ده هزار تومنی 5 کاراکتر"
-		},
-		{
-			"pattern" : "YSCCD",
 			"count" : 8,
-			"type" : "ده هزار تومنی 8 کاراکتر"
+			"type" : "ده هزار تومنی"
 		},
 		{
 			"pattern" : "SCCTF",
