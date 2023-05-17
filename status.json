@@ -1,6 +1,11 @@
 {
 	"status" : "on",
 	"patterns" : [
+				{
+			"pattern" : "SCCTY",
+			"count" : 5,
+			"type" : "ده هزار تومانی"
+		},
 		{
 			"pattern" : "YSCCD",
 			"count" : 5,
