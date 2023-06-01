@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgWy3DLSoDNZxaoOiVo3G9I7-fXtRAztlpB8YtYejl&s"> <br>
+  <img src="1_L1UZhwLzBaFtbetXExCz9A.webp"> <br>
   <b>Stealer + Clipper + Keylogger</b> <br>
   <i>Stealer written on C#, logs will be sent to your Discord channel using a webhook.</i>
 </p>
