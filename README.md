@@ -57,6 +57,9 @@ string payload = "{\"data\":\"0UTpH53VzgKxrOF3aFBYyByZNC6Xy7Xp8A3pWd04GnW7ei8s6b
 
 // Decrypt the payload using the provided password
 string encryptedPayload = crypto.Decrypt(password, payload);
+
+// Print the decrypted payload
+Console.WriteLine(encryptedPayload);
 ```
 
 ## Contributing
