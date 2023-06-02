@@ -28,14 +28,14 @@ To use MetaMaskCrypto in your project, follow the example code below:
 ### Encryption
 
 ```csharp
-        var crypto = new MetaCrypto();
+MetaCrypto crypto = new();
 
-        var password = "<Your Password>";
-        var payload = "<Your Payload>";
+string password = "<Your Password>";
+string payload = "<Your Payload>";
 
-        var encryptedPayload = crypto.Encrypt(password, payload);
+string encryptedPayload = crypto.Encrypt(password, payload);
 
-        Console.WriteLine(encryptedPayload);
+Console.WriteLine(encryptedPayload);
 ```
 
 
