@@ -63,14 +63,6 @@ string encryptedPayload = crypto.Decrypt(password, payload);
 
 Contributions to MetaMaskCrypto are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/your-repository).
 
-To contribute to the project, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make the necessary changes in your branch.
-4. Commit your changes and push the branch to your fork.
-5. Submit a pull request to the `main` branch of the main repository.
-
 Please ensure that your contributions adhere to the coding standards, and include relevant documentation and tests if applicable.
 
 ## License
