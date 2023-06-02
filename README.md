@@ -27,7 +27,7 @@ To use MetaMaskCrypto in your project, follow the example code below:
 
 ### Encryption
 
-```csharp
+```cs
 MetaCrypto crypto = new();
 
 string password = "<Your Password>";
@@ -41,7 +41,7 @@ Console.WriteLine(encryptedPayload);
 
 ### Decryption
 
-```csharp
+```cs
 using MetaMaskCrypto;
 
 class Program
