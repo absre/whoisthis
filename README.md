@@ -20,9 +20,9 @@ MetaMaskCrypto can be easily installed via [NuGet](https://www.nuget.org/). Foll
 1. Open the NuGet Package Manager Console in Visual Studio or the terminal in your project directory.
 2. Run one of the following commands:
 
-```markdown
 ```bash
-#!/bin/bash
+my command
+bash```
 
 ## Usage
 You can replace the code in
