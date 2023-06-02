@@ -20,9 +20,35 @@ MetaMaskCrypto can be easily installed via [NuGet](https://www.nuget.org/). Foll
 1. Open the NuGet Package Manager Console in Visual Studio or the terminal in your project directory.
 2. Run one of the following commands:
 
-```sh
-my command
+```bash
+Install-Package MetaMaskCrypto
 ```
 
 ## Usage
-You can replace the code in
+To use MetaMaskCrypto in your project, follow the example code below:
+```cs
+using (var db = new BloggingContext())
+{
+    // Inserting data into the database
+    db.Add(new Blog { Url = "http://blogs.msdn.com/adonet" });
+    db.SaveChanges();
+
+    // Querying
+    var blog = db.Blogs
+        .OrderBy(b => b.BlogId)
+        .First();
+
+    // Updating
+    blog.Url = "https://devblogs.microsoft.com/dotnet";
+    blog.Posts.Add(
+        new Post
+        {
+            Title = "Hello World",
+            Content = "I wrote an app using EF Core!"
+        });
+    db.SaveChanges();
+
+    // Deleting
+    db.Remove(blog);
+    db.SaveChanges();
+}
