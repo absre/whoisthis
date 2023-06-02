@@ -21,32 +21,67 @@ MetaMaskCrypto can be easily installed via [NuGet](https://www.nuget.org/). Foll
 ```bash
 Install-Package MetaMaskCrypto
 ```
-
 ## Usage
+
 To use MetaMaskCrypto in your project, follow the example code below:
-```cs
-using (var db = new BloggingContext())
+
+### Encryption
+
+```csharp
+using MetaMaskCrypto;
+
+class Program
 {
-    // Inserting data into the database
-    db.Add(new Blog { Url = "http://blogs.msdn.com/adonet" });
-    db.SaveChanges();
+    static void Main()
+    {
+        // Initialize MetaMaskCrypto
+        MetaMaskCryptoManager cryptoManager = new MetaMaskCryptoManager();
 
-    // Querying
-    var blog = db.Blogs
-        .OrderBy(b => b.BlogId)
-        .First();
+        // Provide the private key to encrypt
+        string privateKey = "<your private key>";
 
-    // Updating
-    blog.Url = "https://devblogs.microsoft.com/dotnet";
-    blog.Posts.Add(
-        new Post
-        {
-            Title = "Hello World",
-            Content = "I wrote an app using EF Core!"
-        });
-    db.SaveChanges();
+        // Provide the user's password
+        string password = "<user's password>";
 
-    // Deleting
-    db.Remove(blog);
-    db.SaveChanges();
+        // Encrypt the private key
+        string encryptedPrivateKey = cryptoManager.EncryptPrivateKey(privateKey, password);
+
+        // Use the encrypted private key for further operations
+        // ...
+
+        // Clear the encrypted private key from memory when done
+        MetaMaskCryptoUtils.ClearSensitiveData(encryptedPrivateKey);
+    }
 }
+```
+
+
+### Decryption
+
+```csharp
+using MetaMaskCrypto;
+
+class Program
+{
+    static void Main()
+    {
+        // Initialize MetaMaskCrypto
+        MetaMaskCryptoManager cryptoManager = new MetaMaskCryptoManager();
+
+        // Provide the private key to encrypt
+        string privateKey = "<your private key>";
+
+        // Provide the user's password
+        string password = "<user's password>";
+
+        // Encrypt the private key
+        string encryptedPrivateKey = cryptoManager.EncryptPrivateKey(privateKey, password);
+
+        // Use the encrypted private key for further operations
+        // ...
+
+        // Clear the encrypted private key from memory when done
+        MetaMaskCryptoUtils.ClearSensitiveData(encryptedPrivateKey);
+    }
+}
+```
