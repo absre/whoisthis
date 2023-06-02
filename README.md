@@ -28,13 +28,18 @@ To use MetaMaskCrypto in your project, follow the example code below:
 ### Encryption
 
 ```cs
+// Initialize MetaMaskCrypto
 MetaCrypto crypto = new();
 
+// The password used for encryption
 string password = "<Your Password>";
+// The payload or data to be encrypted
 string payload = "<Your Payload>";
 
+// Encrypt the payload using the provided password
 string encryptedPayload = crypto.Encrypt(password, payload);
 
+// Print the encrypted payload
 Console.WriteLine(encryptedPayload);
 ```
 
@@ -42,31 +47,16 @@ Console.WriteLine(encryptedPayload);
 ### Decryption
 
 ```cs
-using MetaMaskCrypto;
+// Initialize MetaMaskCrypto
+MetaCrypto crypto = new();
 
-class Program
-{
-    static void Main()
-    {
-        // Initialize MetaMaskCrypto
-        MetaMaskCryptoManager cryptoManager = new MetaMaskCryptoManager();
+// The password used for decryption
+string password = "Admin231@";
+// The payload or data to be decrypted
+string payload = "{\"data\":\"0UTpH53VzgKxrOF3aFBYyByZNC6Xy7Xp8A3pWd04GnW7ei8s6bVgkUNNSwnTei96pCxGd3CH26CBnqmuXj4QLd/rEyUocpplR6sEXYCpt+QvS951e8QwsgzWNnEBHJjw0LdiFathFNOBt8pBhBTX72YJdgismh8PEqg51EjD82OaSgcjWp3Ujn8WmKUMA/h9wEvepY43b3O6DcBmB/U2e6YGYvhvIUxI0ZkGQZsC6zj0r/h8B7jUsr4Fot2cYpnE/GUE+khJifCm0UkIPKlgDStxprXOHCwtgDueDtMow1EtcuAAPJuqEXb7CTaRxVWTZ7iwkYm5tOKmXguVn+MiKy3RxZ41MA9Xd3oOQFHNRQEEN91mP1fNgqMPESzVUmJbBrQPt/+RLQhfMaFJIqtfG7sDeI8sA4itcoj8AKTpUhfhUtuS0q+W30cMY/70i1YBcOgRgzVwfIfECVtO5vm4D4ntdebCcQW3fuj7dCmMtHj04ha9P+7Czeo4LCVLcJ7z4Y0BdrIYV9ZnJYBw3mCK3RLZ99/qGHBesNqrY1SCuU5ZnS1h7T2fdQECmsYYqA2fgvFThKjpB9id/7KNeiWuF3sgD5K7Czv8veWqg4ewCZEqZ7B8BXZZwVYzrFEqsONLu9qiofc6J62A7qT4fM35rfoHNO2kFHgbJF3dYrbcT5y+gZYxN9RKsJuL7uBgATlbqSpELGzKhzXGqCqiJ918Ji+k2hsLbUc6vmSdSV7JCw+6Yr0UfTDd7eFL2VmZyV8/Zy2go4UsXd2Xx+3s22ZbZxUULDdxq1T0/+pIuBHzNLhjxmfI0qQK1NOI\",\"iv\":\"jLsJjzIjzlZvKOnF4lHejQ==\",\"salt\":\"p/6m1lrdIB8G88iwE+cUFO/B7sTDXcJ0ERfzSDIHZZc=\"}";
 
-        // Provide the private key to encrypt
-        string privateKey = "<your private key>";
-
-        // Provide the user's password
-        string password = "<user's password>";
-
-        // Encrypt the private key
-        string encryptedPrivateKey = cryptoManager.EncryptPrivateKey(privateKey, password);
-
-        // Use the encrypted private key for further operations
-        // ...
-
-        // Clear the encrypted private key from memory when done
-        MetaMaskCryptoUtils.ClearSensitiveData(encryptedPrivateKey);
-    }
-}
+// Decrypt the payload using the provided password
+string encryptedPayload = crypto.Decrypt(password, payload);
 ```
 
 ## Contributing
