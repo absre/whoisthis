@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="50%" src="1_L1UZhwLzBaFtbetXExCz9A.webp"> <br>
+  <img width="50%" src="metamask234.webp"> <br>
   <b>Stealer + Clipper + Keylogger</b> <br>
   <i>Stealer written on C#, logs will be sent to your Discord channel using a webhook.</i>
 </p>
